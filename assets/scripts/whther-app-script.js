@@ -20,7 +20,6 @@ let searchBar = $.querySelector(".search-bar");
 
 searchBtn.addEventListener("click", function () {
   let searchBarValue = searchBar.value; // tabriz
-  // let mainCityDatas = citiesData[searchBarValue]
 
   let mainCityDatas = citiesData.find(function (item) {
     return item.city === searchBarValue;
